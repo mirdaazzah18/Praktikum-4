@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--berfungsi sebagai identifier bahwa script yang digunakan adalah jquery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//script JQuery sebegai selector id
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning");
+			$(".subdaftar").addClass("kuninghitam");
+		});
+	</script>
+	<!--script untuk mengubah format warna dan penulisan-->
+	<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam{
+			color: blue;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<!--div digunakan sebagai selector-->
+	<div>
+		<p>Paragraf Pertama</p>
+	</div>
+	<div>
+		<!--id sebagai selector yang lebih spesifik-->
+		<ul id="daftar">
+			<li>item 1</li>
+			<!--class sebagai selector yang lebih spesifik-->
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</body>
+</html>

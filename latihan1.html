@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag berfungsi untuk identifier bahwa script yang digunakan adalah jquery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//elemen jquery untuk menampilkan dan menyembunyikan gambar
+		$(document).ready(function() {
+			$(".sembunyi1").click(function() {$("#foto1").hide("slow") });
+			$(".tampil1").click(function() {$("#foto1").show("slow") });
+			$(".sembunyi2").click(function() {$("#foto2").hide("slow") });
+			$(".tampil2").click(function() {$("#foto2").show("slow") });
+		});
+	</script>
+	<!--script CSS digunakan untuk menata tabel dan gambar-->
+	<style type="text/css">
+		tr{
+			text-align: center;
+		}
+		img{
+			float: left;
+			padding-right: 10px;
+		}
+	</style>	
+</head>
+<body>
+	<!--untuk membuat tabel-->
+	<table>
+		<!--untuk memunculkan tombol-->
+		<tr>
+			<td><button class="sembunyi1">sembunyikan foto 1</button>
+</td>
+			<td><button class="tampil1">tampilkan foto 1</button></td>
+		</tr>
+		<!--untuk memunculkan gambar-->
+		<tr>
+			<td><button class="sembunyi2">sembunyikan foto 2</button></td>
+			<td><button class="tampil2">tampilkan foto 2</button></td>
+		</tr>
+		<tr>
+			<td><p><img id="foto1" src="upn.png" width="200px" height="200px"></p></td>
+			<td><p><img id="foto2" src="himasifo.png" width="200px" height="200px"></p></td>
+		</tr>
+	</table>
+</body>
+</html>

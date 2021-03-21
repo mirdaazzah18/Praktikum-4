@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag digunakan untuk identifier bahwa script yang digunakan adalah jquery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//script JQuery sebegai selector id
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning");
+		});
+	</script>
+	<!--script CSS berfungsi untuk mengubah format warna dan penulisan-->
+	<style type="text/css">
+		.merahkuning{
+			color: orange;
+			font-weight: bold;
+			background-color: green;
+			padding: 3px;
+		}
+	</style>
+</head>
+<body>
+	<!--div sebagai selector-->
+	<div>
+		<p>Paragraf Pertama</p>
+	</div>
+	<div>
+		<!--id sebagai selector yang lebih spesifik-->
+		<ul id="daftar">
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</body>
+</html>
